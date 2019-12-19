@@ -27,13 +27,13 @@ function timer(){
     document.getElementById("todoname").innerHTML = document.getElementById("todo").value
     rapnumber = document.getElementById("rap").value
     departuretime = parseInt(document.getElementById("time").value * 60) + parseInt(document.getElementById("sec").value)
-    section = [document.getElementById("section1").value,document.getElementById("section2").value,document.getElementById("section3").value] 
-    target[0] = parseInt(departuretime) * 60 * 1000
+    section = [document.getElementById("section1").value,document.getElementById("section2").value,document.getElementById("section3").value,document.getElementById("section4").value,document.getElementById("section5").value] 
     document.getElementById("next").innerHTML=section[nowstation]
     for( let i=1 ; i<8 ; i++){
-        player[i].target = ((parseInt(departuretime))+ Math.floor( Math.random() * 60 ) - 35) * 1000
+        player[i].target = ((parseInt(departuretime))+ Math.floor( Math.random() * 60 ) - 30) * 1000
+        console.log(player[i].target)
     }
-    
+    console.log(departuretime)
     stationtimer = setInterval(timermain, 100);
 }
 function checkpoint(){
@@ -58,7 +58,7 @@ function timermain(){
     hour = addZero(hour);
     document.getElementById("nowtime").innerHTML=""+hour+":"+min2+":"+secsec+"."+point2;
     for( let i=1 ; i<8 ; i++){ 
-        player[i].target += (Math.floor( Math.random() * 1000 ) - 450);
+        player[i].target += (Math.floor( Math.random() * 1000 ) - 500);
         player[i].par = (Math.floor(diftime / player[i].target * 100))
         if (player[i].par > 100){
         }
