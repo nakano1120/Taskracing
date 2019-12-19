@@ -1,0 +1,28 @@
+body{
+    font-size:150%;
+    text-align:center;
+}
+.Header {
+    position: fixed;	/* ヘッダーを固定する */
+    top: 0;	/* 上部から配置の基準位置を決める */ 
+    left: 0;	/* 左から配置の基準位置を決める */ 
+    width: 100%;	/* ヘッダーの横幅を指定する */
+    height: 40px;	/* ヘッダーの高さを指定する */
+    padding: 10px 0;	/* ヘッダーの余白を指定する(上下左右) */
+    background-color: #ff0000;	/* ヘッダーの背景色を指定する */
+    color: #ffffff;	/* フォントの色を指定する */
+    font-size:150%;
+}	
+.main{
+    width: 100%;	/* コンテンツの横幅を指定する */
+    padding:60px 0 0 0;
+    overflow: auto; /* コンテンツの表示を自動に設定（スクロール） */
+}
+input#ore{
+    font-size:100%;
+    width:200px;
+    background-color:orange;
+}
+input{
+    width:50px;
+}
