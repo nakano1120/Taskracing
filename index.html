@@ -15,7 +15,7 @@
     <div class="main">
         <form id="form1">
             目標:<input type="text" id="todo" v-model="message">
-            目標時間:<input type="number" id="time" value="1">分
+            目標時間:<input type="number" id="time" value="1">分<input type="number" id="sec" value="30">秒
             ラップ数:<input type="number" id="rap" value="3"><br>
             ラップ1:<input type="text" id="section1" value="300m地点"><br>
             ラップ2:<input type="text" id="section2" value="700m地点"><br>
@@ -25,20 +25,18 @@
             <input type="button" value="開始" onclick="timer()">
         </form>
         <h1 id="todoname">{{message}}</h1>
-        
-        <h2><span id="ranking">1</span>位</h2>
-        Next:<span id="next">???</span>
         <h2 id="nowtime">00:00:00.0</h2>
+        Next:<span id="next">???</span>
     </div><br>
     <div class="rank">
-        <span>1位　<span id="name1">いちろう</span>　<span id="parsent1">100</span>%</span><br>
-        <span>2位　<span id="name2">じろう</span>　<span id="parsent2">90</span>%</span><br>
-        <span>3位　<span id="name3">さぶろう</span>　<span id="parsent3">80</span>%</span><br>
-        <span>4位　<span id="name4">しろう</span>　<span id="parsent4">70</span>%</span><br>
-        <span>5位　<span id="name5">ごろう</span>　<span id="parsent5">60</span>%</span><br>
-        <span>6位　<span id="name6">ろくろう</span>　<span id="parsent6">40</span>%</span><br>
-        <span>7位　<span id="name7">ななろう</span>　<span id="parsent7">30</span>%</span><br>
-        <span>8位　<span id="name8">あなた</span>　<span id="parsent8">0</span>%</span><br>
+        <span class="ranking">1位　<span id="name1">いちろう</span>　<span id="parsent1">100</span>%</span><br>
+        <span class="ranking">2位　<span id="name2">じろう</span>　<span id="parsent2">90</span>%</span><br>
+        <span class="ranking">3位　<span id="name3">さぶろう</span>　<span id="parsent3">80</span>%</span><br>
+        <span class="ranking">4位　<span id="name4">しろう</span>　<span id="parsent4">70</span>%</span><br>
+        <span class="ranking">5位　<span id="name5">ごろう</span>　<span id="parsent5">60</span>%</span><br>
+        <span class="ranking">6位　<span id="name6">ろくろう</span>　<span id="parsent6">40</span>%</span><br>
+        <span class="ranking">7位　<span id="name7">ななろう</span>　<span id="parsent7">30</span>%</span><br>
+        <span class="ranking">8位　<span id="name8">あなた</span>　<span id="parsent8">0</span>%</span><br>
     </div>
     <input type="button" id="ore"value="check point" onclick="checkpoint()">
     <script src="task.js">
