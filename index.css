@@ -2,6 +2,9 @@ body{
     font-size:110%;
     text-align:center;
 }
+#form1{
+    background-color:#eeeeee;
+}
 .Header {
     position: fixed;	/* ヘッダーを固定する */
     top: 0;	/* 上部から配置の基準位置を決める */ 
@@ -28,6 +31,7 @@ input{
 }
 .ranking{
     display:inline-block;
+    width:80vw;
     padding:5px;
     margin:5px;
     border:1px solid #000000;
